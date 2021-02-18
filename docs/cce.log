@@ -1,0 +1,106 @@
+> Task :clean
+> Task :compileKotlin
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+> Task :bootRunMainClassName
+
+> Task :bootRun FAILED
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.2)
+
+2021-02-18 11:55:37.254  INFO 45710 --- [           main] com.example.demo.DemoApplicationKt       : Starting DemoApplicationKt using Java 11.0.6 on roger with PID 45710 (/home/dwitry/work/research/jooq-cce/build/classes/kotlin/main started by dwitry in /home/dwitry/work/research/jooq-cce)
+2021-02-18 11:55:37.255  INFO 45710 --- [           main] com.example.demo.DemoApplicationKt       : No active profile set, falling back to default profiles: default
+2021-02-18 11:55:37.632  INFO 45710 --- [           main] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.14.4
+                                      
+2021-02-18 11:55:37.638  WARN 45710 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataBaseTest': Invocation of init method failed; nested exception is java.lang.ClassCastException: class [Lorg.jooq.JSON; cannot be cast to class org.jooq.JSON ([Lorg.jooq.JSON; and org.jooq.JSON are in unnamed module of loader 'app')
+2021-02-18 11:55:37.643  INFO 45710 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-18 11:55:37.652 ERROR 45710 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataBaseTest': Invocation of init method failed; nested exception is java.lang.ClassCastException: class [Lorg.jooq.JSON; cannot be cast to class org.jooq.JSON ([Lorg.jooq.JSON; and org.jooq.JSON are in unnamed module of loader 'app')
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.example.demo.DemoApplicationKt.main(DemoApplication.kt:13) ~[main/:na]
+Caused by: java.lang.ClassCastException: class [Lorg.jooq.JSON; cannot be cast to class org.jooq.JSON ([Lorg.jooq.JSON; and org.jooq.JSON are in unnamed module of loader 'app')
+	at org.jooq_3.14.4.DEFAULT.debug(Unknown Source) ~[na:na]
+	at org.jooq.impl.DefaultBinding$DefaultJSONBinding.sqlBind0(DefaultBinding.java:4450) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.DefaultBinding$AbstractBinding.sql(DefaultBinding.java:810) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.DefaultBinding$AbstractBinding.sql(DefaultBinding.java:786) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.Val.accept(Val.java:135) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.DefaultRenderContext.visit0(DefaultRenderContext.java:612) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractContext.visit(AbstractContext.java:270) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.FieldMapsForInsert.toSQL92Values(FieldMapsForInsert.java:302) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.FieldMapsForInsert.toSQL92Values(FieldMapsForInsert.java:254) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.FieldMapsForInsert.accept(FieldMapsForInsert.java:129) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.DefaultRenderContext.visit0(DefaultRenderContext.java:612) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractContext.visit(AbstractContext.java:270) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.InsertQueryImpl.toSQLInsert(InsertQueryImpl.java:731) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.InsertQueryImpl.accept0(InsertQueryImpl.java:617) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractDMLQuery.accept(AbstractDMLQuery.java:604) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.DefaultRenderContext.visit0(DefaultRenderContext.java:612) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractContext.visit(AbstractContext.java:270) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractQuery.getSQL0(AbstractQuery.java:534) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.AbstractQuery.execute(AbstractQuery.java:330) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.TableRecordImpl.storeInsert0(TableRecordImpl.java:218) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.TableRecordImpl$1.operate(TableRecordImpl.java:183) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.RecordDelegate.operate(RecordDelegate.java:131) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.TableRecordImpl.storeInsert(TableRecordImpl.java:179) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.UpdatableRecordImpl.store0(UpdatableRecordImpl.java:219) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.UpdatableRecordImpl.access$000(UpdatableRecordImpl.java:89) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.UpdatableRecordImpl$1.operate(UpdatableRecordImpl.java:145) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.RecordDelegate.operate(RecordDelegate.java:131) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.UpdatableRecordImpl.store(UpdatableRecordImpl.java:141) ~[jooq-3.14.4.jar:na]
+	at org.jooq.impl.UpdatableRecordImpl.store(UpdatableRecordImpl.java:133) ~[jooq-3.14.4.jar:na]
+	at com.example.demo.DataBaseTest.setup(DataBaseTest.kt:27) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 18 common frames omitted
+
+5 actionable tasks: 5 executed
